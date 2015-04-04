@@ -5,16 +5,16 @@ Build and scale ecommerce with Schema. Create a free account at https://schema.i
 ## Example
 
 ```ruby
-	require 'schema'
+require 'schema'
 
-	client = Schema::Client.new({
-		"id": "<clientid>",
-		"key": "<clientkey>"
-	))
+client = Schema::Client.new({
+	"id": "<clientid>",
+	"key": "<clientkey>"
+))
 
-	products = client.get("/categories/shoes/products", {'color': "blue"})
+products = client.get("/categories/shoes/products", {'color': "blue"})
 
-	print products.inspect
+print products.inspect
 ```
 
 ## Documentation
