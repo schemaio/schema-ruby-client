@@ -4,6 +4,7 @@ Build and scale ecommerce with Schema. Create a free account at https://schema.i
 
 ## Example
 
+```ruby
 	require 'schema'
 
 	client = Schema::Client.new({
@@ -14,6 +15,7 @@ Build and scale ecommerce with Schema. Create a free account at https://schema.i
 	products = client.get("/categories/shoes/products", {'color': "blue"})
 
 	print products.inspect
+```
 
 ## Documentation
 
